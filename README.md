@@ -1,8 +1,4 @@
-# p2panda-tauri-example
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/p2panda/.github/main/assets/tauri-example-screenshot.png" width="600" />
-</div>
+# [fork] p2panda-tauri-example
 
 [tutorial](https://aquadoggo.p2panda.org/tutorials/tauri/) 👈
 
