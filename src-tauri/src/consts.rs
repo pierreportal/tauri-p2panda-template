@@ -6,6 +6,9 @@ pub(crate) const PRIVATE_KEY_FILE: &str = "private-key.txt";
 /// Name of `aquadoggo` config toml file.
 pub(crate) const AQUADOGGO_CONFIG: &str = "config.toml";
 
+/// Name of `aquadoggo` dev mode config toml file.
+pub(crate) const AQUADOGGO_DEV_CONFIG: &str = "config.dev.toml";
+
 /// Name of directory where tauri resources are located.
 pub(crate) const RESOURCES_DIR: &str = "resources";
 

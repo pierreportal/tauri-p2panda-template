@@ -1,17 +1,25 @@
-[sprite_images]
-description = "An image which can be assigned to a sprite"
+# E.g:
 
-[sprite_images.fields]
-blob = { type = "relation", schema = { id = "blob_v1" } }
-description = { type = "str" }
-timestamp = { type = "int" }
+# [user_sprite]
+# description = "An sprite which can be assigned to a user"
 
-[sprites]
-description = "A sprite which can be placed on a 2 dimensional plane"
+# [user_sprite.fields]
+# blob = { type = "relation", schema = { id = "blob_v1" } }
+# description = { type = "str" }
+# timestamp = { type = "int" }
 
-[sprites.fields]
-img = { type = "relation", schema = { name = "sprite_images" } }
-pos_x = { type = "int" }
-pos_y = { type = "int" }
-timestamp = { type = "int" }
-colour = { type = "str" }
+# [user_message]
+# description = "Messages sent by a user"
+
+# [user_message.fields]
+# content = { type = "str" }
+# timestamp = { type = "int" }
+# from = { type = "relation", schema = { name = "user" } }
+
+# [user]
+# description = "A user"
+
+# [user.fields]
+# sprite = { type = "relation", schema = { name = "user_sprite" } }
+# timestamp = { type = "int" }
+# name = { type = "str" }

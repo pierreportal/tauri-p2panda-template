@@ -2,17 +2,6 @@ import { invoke } from "@tauri-apps/api";
 import { useEffect, useState, useCallback } from "react";
 import { KeyPair, Session } from "shirokuma";
 
-declare global {
-    interface Window {
-        HTTP_PORT: number;
-        NODE_ADDRESS: string;
-        BLOBS_PATH: string;
-        GRAPHQL_ENDPOINT: string;
-        session: any; // Keep as 'any' for backward compatibility
-        LATEST_SPRITE: any;
-    }
-}
-
 interface InitState {
     isLoading: boolean;
     isInitialized: boolean;
